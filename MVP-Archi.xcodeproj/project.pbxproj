@@ -3,31 +3,67 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		830638BD24AD7782002FE912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830638BC24AD7782002FE912 /* AppDelegate.swift */; };
 		830638BF24AD7782002FE912 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830638BE24AD7782002FE912 /* SceneDelegate.swift */; };
-		830638C124AD7782002FE912 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830638C024AD7782002FE912 /* ViewController.swift */; };
+		830638C124AD7782002FE912 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830638C024AD7782002FE912 /* BookListViewController.swift */; };
 		830638C424AD7782002FE912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830638C224AD7782002FE912 /* Main.storyboard */; };
 		830638C624AD7787002FE912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830638C524AD7787002FE912 /* Assets.xcassets */; };
 		830638C924AD7787002FE912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830638C724AD7787002FE912 /* LaunchScreen.storyboard */; };
+		830638D624AD77E9002FE912 /* BookListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830638D524AD77E9002FE912 /* BookListService.swift */; };
+		830638D824AD7803002FE912 /* BookListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830638D724AD7803002FE912 /* BookListPresenter.swift */; };
+		830638DA24AD780B002FE912 /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830638D924AD780B002FE912 /* BookList.swift */; };
+		830638DD24AD7955002FE912 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 830638DC24AD7955002FE912 /* Alamofire */; };
+		830638DF24ADA11C002FE912 /* BookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830638DE24ADA11C002FE912 /* BookListTableViewCell.swift */; };
+		839941F724ADA7AF00FC20CD /* BookDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839941F624ADA7AF00FC20CD /* BookDetailService.swift */; };
+		839941F924ADA80500FC20CD /* BookDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839941F824ADA80500FC20CD /* BookDetail.swift */; };
+		839941FB24ADA80E00FC20CD /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839941FA24ADA80E00FC20CD /* BookDetailViewController.swift */; };
+		839941FD24ADA81E00FC20CD /* BookDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839941FC24ADA81E00FC20CD /* BookDetailPresenter.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		830638ED24ADBAB2002FE912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 830638B124AD7782002FE912 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 830638B824AD7782002FE912;
+			remoteInfo = "MVP-Archi";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		830638B924AD7782002FE912 /* MVP-Archi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP-Archi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		830638BC24AD7782002FE912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		830638BE24AD7782002FE912 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		830638C024AD7782002FE912 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		830638C024AD7782002FE912 /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
 		830638C324AD7782002FE912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		830638C524AD7787002FE912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		830638C824AD7787002FE912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		830638CA24AD7787002FE912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830638D524AD77E9002FE912 /* BookListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListService.swift; sourceTree = "<group>"; };
+		830638D724AD7803002FE912 /* BookListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListPresenter.swift; sourceTree = "<group>"; };
+		830638D924AD780B002FE912 /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
+		830638DE24ADA11C002FE912 /* BookListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewCell.swift; sourceTree = "<group>"; };
+		830638E824ADBAB2002FE912 /* MVP-ArchiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVP-ArchiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		839941F624ADA7AF00FC20CD /* BookDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailService.swift; sourceTree = "<group>"; };
+		839941F824ADA80500FC20CD /* BookDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetail.swift; sourceTree = "<group>"; };
+		839941FA24ADA80E00FC20CD /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		839941FC24ADA81E00FC20CD /* BookDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		830638B624AD7782002FE912 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830638DD24AD7955002FE912 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830638E524ADBAB2002FE912 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				830638B924AD7782002FE912 /* MVP-Archi.app */,
+				830638E824ADBAB2002FE912 /* MVP-ArchiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,13 +95,53 @@
 			children = (
 				830638BC24AD7782002FE912 /* AppDelegate.swift */,
 				830638BE24AD7782002FE912 /* SceneDelegate.swift */,
-				830638C024AD7782002FE912 /* ViewController.swift */,
+				830638D024AD7796002FE912 /* Service */,
+				830638D224AD77A6002FE912 /* Model */,
+				830638D124AD77A1002FE912 /* View */,
+				830638D424AD77B8002FE912 /* Presenter */,
 				830638C224AD7782002FE912 /* Main.storyboard */,
 				830638C524AD7787002FE912 /* Assets.xcassets */,
 				830638C724AD7787002FE912 /* LaunchScreen.storyboard */,
 				830638CA24AD7787002FE912 /* Info.plist */,
 			);
 			path = "MVP-Archi";
+			sourceTree = "<group>";
+		};
+		830638D024AD7796002FE912 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				830638D524AD77E9002FE912 /* BookListService.swift */,
+				839941F624ADA7AF00FC20CD /* BookDetailService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		830638D124AD77A1002FE912 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				830638C024AD7782002FE912 /* BookListViewController.swift */,
+				830638DE24ADA11C002FE912 /* BookListTableViewCell.swift */,
+				839941FA24ADA80E00FC20CD /* BookDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		830638D224AD77A6002FE912 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				830638D924AD780B002FE912 /* BookList.swift */,
+				839941F824ADA80500FC20CD /* BookDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		830638D424AD77B8002FE912 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				830638D724AD7803002FE912 /* BookListPresenter.swift */,
+				839941FC24ADA81E00FC20CD /* BookDetailPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +160,30 @@
 			dependencies = (
 			);
 			name = "MVP-Archi";
+			packageProductDependencies = (
+				830638DC24AD7955002FE912 /* Alamofire */,
+			);
 			productName = "MVP-Archi";
 			productReference = 830638B924AD7782002FE912 /* MVP-Archi.app */;
 			productType = "com.apple.product-type.application";
+		};
+		830638E724ADBAB2002FE912 /* MVP-ArchiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830638EF24ADBAB2002FE912 /* Build configuration list for PBXNativeTarget "MVP-ArchiTests" */;
+			buildPhases = (
+				830638E424ADBAB2002FE912 /* Sources */,
+				830638E524ADBAB2002FE912 /* Frameworks */,
+				830638E624ADBAB2002FE912 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				830638EE24ADBAB2002FE912 /* PBXTargetDependency */,
+			);
+			name = "MVP-ArchiTests";
+			productName = "MVP-ArchiTests";
+			productReference = 830638E824ADBAB2002FE912 /* MVP-ArchiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +198,10 @@
 					830638B824AD7782002FE912 = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					830638E724ADBAB2002FE912 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 830638B824AD7782002FE912;
+					};
 				};
 			};
 			buildConfigurationList = 830638B424AD7782002FE912 /* Build configuration list for PBXProject "MVP-Archi" */;
@@ -111,11 +213,15 @@
 				Base,
 			);
 			mainGroup = 830638B024AD7782002FE912;
+			packageReferences = (
+				830638DB24AD7955002FE912 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 830638BA24AD7782002FE912 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				830638B824AD7782002FE912 /* MVP-Archi */,
+				830638E724ADBAB2002FE912 /* MVP-ArchiTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +237,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		830638E624ADBAB2002FE912 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +251,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				830638C124AD7782002FE912 /* ViewController.swift in Sources */,
+				830638DA24AD780B002FE912 /* BookList.swift in Sources */,
+				839941F724ADA7AF00FC20CD /* BookDetailService.swift in Sources */,
+				830638D624AD77E9002FE912 /* BookListService.swift in Sources */,
+				830638C124AD7782002FE912 /* BookListViewController.swift in Sources */,
+				839941FB24ADA80E00FC20CD /* BookDetailViewController.swift in Sources */,
+				830638D824AD7803002FE912 /* BookListPresenter.swift in Sources */,
+				839941F924ADA80500FC20CD /* BookDetail.swift in Sources */,
 				830638BD24AD7782002FE912 /* AppDelegate.swift in Sources */,
+				839941FD24ADA81E00FC20CD /* BookDetailPresenter.swift in Sources */,
 				830638BF24AD7782002FE912 /* SceneDelegate.swift in Sources */,
+				830638DF24ADA11C002FE912 /* BookListTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830638E424ADBAB2002FE912 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		830638EE24ADBAB2002FE912 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 830638B824AD7782002FE912 /* MVP-Archi */;
+			targetProxy = 830638ED24ADBAB2002FE912 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		830638C224AD7782002FE912 /* Main.storyboard */ = {
@@ -316,6 +452,46 @@
 			};
 			name = Release;
 		};
+		830638F024ADBAB2002FE912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77F6X5R2CN;
+				INFOPLIST_FILE = "MVP-ArchiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kiwan.MVP-ArchiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVP-Archi.app/MVP-Archi";
+			};
+			name = Debug;
+		};
+		830638F124ADBAB2002FE912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77F6X5R2CN;
+				INFOPLIST_FILE = "MVP-ArchiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kiwan.MVP-ArchiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVP-Archi.app/MVP-Archi";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,7 +513,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		830638EF24ADBAB2002FE912 /* Build configuration list for PBXNativeTarget "MVP-ArchiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830638F024ADBAB2002FE912 /* Debug */,
+				830638F124ADBAB2002FE912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		830638DB24AD7955002FE912 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		830638DC24AD7955002FE912 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 830638DB24AD7955002FE912 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 830638B124AD7782002FE912 /* Project object */;
 }
